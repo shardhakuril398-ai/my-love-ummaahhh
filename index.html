@@ -1,0 +1,1374 @@
+[9/25/2026 10:53 PM] Secret queen: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hey You 👀💗</title>
+
+<style>
+
+/* =========================
+   BASIC PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background:
+        radial-gradient(circle at top, #fff5fa, #ffe4f0, #ffd7e8);
+
+    color: #704458;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   MAIN SCREEN
+========================= */
+
+.screen {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card {
+    width: min(92vw, 650px);
+    min-height: 450px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.82);
+
+    border: 2px solid #f4bfd5;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 15px 50px rgba(180,80,120,0.20);
+
+    backdrop-filter: blur(10px);
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+h1 {
+    color: #d878a2;
+
+    font-size: clamp(28px,7vw,42px);
+
+    margin: 10px 0 15px;
+
+    text-shadow:
+        0 0 10px #ffc3db;
+}
+
+
+h2 {
+    color: #89536b;
+
+    font-size: clamp(20px,5vw,29px);
+
+    line-height: 1.45;
+}
+
+
+p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+.intro {
+    color: #efa5c5;
+
+    font-weight: 600;
+}
+
+
+.emoji {
+    font-size: 65px;
+
+    margin-bottom: 8px;
+}
+
+
+.warning {
+    color: #df648b;
+
+    font-weight: bold;
+
+    min-height: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 14px 24px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px rgba(150,70,110,0.18);
+}
+
+
+.start,
+.yes {
+    background: #ed9fc1;
+
+    color: white;
+}
+
+
+.second {
+    background: #f5b3d0;
+
+    color: white;
+}
+
+
+.no {
+    background: #eee1e8;
+
+    color: #674655;
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   BUTTON AREA
+========================= */
+
+.buttons {
+    width: 100%;
+
+    height: 150px;
+
+    margin-top: 20px;
+
+    position: relative;
+}
+
+
+.choice {
+    position: absolute;
+
+    transition:
+        left 0.12s linear,
+        top 0.12s linear,
+        right 0.12s linear;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================
+   FINAL PAGE
+========================= */
+
+.final {
+    animation: finalAppear 1.2s ease;
+}
+
+
+@keyframes finalAppear {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+.finalTitle {
+
+    color: #dc78a5;
+
+    font-size: clamp(30px,8vw,46px);
+
+    text-shadow:
+        0 0 10px #ffb9d5,
+        0 0 25px #ff9fc7;
+
+}
+
+
+.finalText {
+
+    color: #9b5c77;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.floatingHeart {
+
+    position: absolute;
+
+    bottom: -60px;
+
+    pointer-events: none;
+
+    animation: floatHeart linear infinite;
+
+    opacity: 0.8;
+
+    z-index: 1;
+}
+
+
+@keyframes floatHeart {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    15% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateY(-120vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   SPARKLES
+========================= */
+
+.sparkle {
+
+    position: absolute;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px #ff9fc6,
+        0 0 20px #ffb5d5;
+
+    animation: sparkle 1s infinite alternate;
+
+    pointer-events: none;
+}
+
+
+@keyframes sparkle {
+
+    from {
+
+        transform: scale(0.3);
+
+        opacity: 0.2;
+    }
+
+    to {
+
+        transform: scale(1.6);
+
+        opacity: 1;
+    }
+}
+[9/25/2026 10:53 PM] Secret queen: /* =========================
+   CUTE CHIBI COUPLE
+========================= */
+
+.couple {
+
+    width: 320px;
+
+    height: 210px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* BODY */
+
+.person {
+
+    position: absolute;
+
+    bottom: 5px;
+
+    width: 105px;
+
+    height: 150px;
+}
+
+
+.person.left {
+
+    left: 45px;
+}
+
+
+.person.right {
+
+    right: 45px;
+}
+
+
+/* HEAD */
+
+.head {
+
+    position: absolute;
+
+    width: 85px;
+
+    height: 85px;
+
+    left: 10px;
+
+    top: 0;
+
+    background: #ffd9bf;
+
+    border: 3px solid #70484d;
+
+    border-radius: 50%;
+
+    z-index: 3;
+}
+
+
+/* HAIR */
+
+.hair {
+
+    position: absolute;
+
+    width: 88px;
+
+    height: 47px;
+
+    left: 8px;
+
+    top: -3px;
+
+    background: #573942;
+
+    border-radius: 50px 50px 25px 25px;
+
+    z-index: 4;
+}
+
+
+/* EYES */
+
+.eye {
+
+    position: absolute;
+
+    width: 7px;
+
+    height: 10px;
+
+    background: #483039;
+
+    border-radius: 50%;
+
+    top: 43px;
+}
+
+
+.eye.leftEye {
+
+    left: 25px;
+}
+
+
+.eye.rightEye {
+
+    right: 25px;
+}
+
+
+/* CHEEKS */
+
+.cheek {
+
+    position: absolute;
+
+    width: 13px;
+
+    height: 7px;
+
+    background: #ef91ad;
+
+    border-radius: 50%;
+
+    top: 56px;
+
+    opacity: 0.7;
+}
+
+
+.cheek.leftCheek {
+
+    left: 9px;
+}
+
+
+.cheek.rightCheek {
+
+    right: 9px;
+}
+
+
+/* BODY */
+
+.body {
+
+    position: absolute;
+
+    width: 90px;
+
+    height: 75px;
+
+    left: 8px;
+
+    bottom: 0;
+
+    border-radius: 45px 45px 20px 20px;
+
+    background: #efa4c4;
+
+    border: 3px solid #70484d;
+}
+
+
+.person.right .body {
+
+    background: #b9a4e5;
+}
+
+
+/* ARMS */
+
+.arm {
+
+    position: absolute;
+
+    width: 65px;
+
+    height: 16px;
+
+    background: #ffd9bf;
+
+    border-radius: 20px;
+
+    top: 91px;
+
+    z-index: 5;
+}
+
+
+.person.left .arm {
+
+    right: -38px;
+
+    transform: rotate(-25deg);
+}
+
+
+.person.right .arm {
+
+    left: -38px;
+
+    transform: rotate(25deg);
+}
+
+
+/* HEART BETWEEN THEM */
+
+.loveHeart {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 48px;
+
+    transform: translateX(-50%);
+
+    font-size: 38px;
+
+    z-index: 20;
+
+    animation: heartBeat 0.8s infinite alternate;
+}
+
+
+@keyframes heartBeat {
+
+    from {
+
+        transform:
+            translateX(-50%)
+            scale(0.85);
+    }
+
+    to {
+
+        transform:
+            translateX(-50%)
+            scale(1.2);
+    }
+}
+
+
+/* MOBILE */
+
+@media(max-width:430px) {
+
+    .card {
+
+        padding: 28px 16px;
+    }
+
+    .couple {
+
+        transform: scale(0.85);
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="screen" id="screen">
+
+
+<div class="card">
+
+
+<!-- =================================
+     START PAGE
+================================= -->
+
+<section id="startPage">
+
+    <div class="emoji">
+        🥺💗
+    </div>
+
+    <h1>
+        Hey you... 👀💗
+    </h1>
+
+    <p class="intro">
+
+        “Tumhare liye kuch banaya hai.<br>
+        Poora dekhna 😤”
+
+    </p>
+
+    <button
+        class="start"
+        onclick="startPage()">
+
+        Theek hai, dikhao 😌
+
+    </button>
+
+</section>
+
+
+
+<!-- =================================
+     QUESTION A
+================================= -->
+
+<section
+    id="questionA"
+    class="hidden">
+
+
+    <div class="emoji">
+        👀💗
+    </div>
+
+
+    <h2>
+
+        Ek honest answer dena...<br>
+
+        meri bakbak tumhe pasand hai? 👀
+
+    </h2>
+
+
+    <div
+        class="buttons"
+        id="areaA">
+
+
+        <button
+            class="choice yes"
+            id="yesA">
+
+            Haan, pasand hai 💗
+
+        </button>
+
+
+        <button
+            class="choice no"
+            id="noA">
+
+            Nahi 😏
+
+        </button>
+
+
+    </div>
+
+
+    <p
+        class="warning"
+        id="warningA">
+
+    </p>
+
+
+</section>
+
+
+
+<!-- =================================
+     QUESTION B
+================================= -->
+
+<section
+    id="questionB"
+    class="hidden">
+
+
+    <div class="emoji">
+        🥺💗
+    </div>
+
+
+    <h2>
+
+        Tu mere se pyaar karta hai ki nahi? 👀
+
+    </h2>
+
+
+    <div
+        class="buttons"
+        id="areaB">
+
+
+        <button
+            class="choice yes"
+            id="yesB">
+
+            Haan, karta hu 💗
+
+        </button>
+[9/25/2026 10:53 PM] Secret queen: <button
+            class="choice second"
+            id="noB">
+
+            Bohot saara karta hu 🥹💗
+
+        </button>
+
+
+    </div>
+
+
+    <p
+        class="warning"
+        id="warningB">
+
+    </p>
+
+
+</section>
+
+
+
+<!-- =================================
+     QUESTION C
+================================= -->
+
+<section
+    id="questionC"
+    class="hidden">
+
+
+    <div class="emoji">
+        😤💗
+    </div>
+
+
+    <h2>
+
+        I love youu bol. 😤
+
+    </h2>
+
+
+    <div
+        class="buttons"
+        id="areaC">
+
+
+        <button
+            class="choice yes"
+            id="love1">
+
+            I lovee youuu 💗
+
+        </button>
+
+
+        <button
+            class="choice second"
+            id="love2">
+
+            I lovee you bohot saara 🥹
+
+        </button>
+
+
+    </div>
+
+
+    <p
+        class="warning"
+        id="warningC">
+
+    </p>
+
+
+</section>
+
+
+
+<!-- =================================
+     FINAL PAGE
+================================= -->
+
+<section
+    id="finalPage"
+    class="hidden final">
+
+
+    <!-- CUTE COUPLE -->
+
+    <div class="couple">
+
+
+        <!-- GIRL -->
+
+        <div class="person left">
+
+
+            <div class="head">
+
+                <div class="eye leftEye"></div>
+
+                <div class="eye rightEye"></div>
+
+                <div class="cheek leftCheek"></div>
+
+                <div class="cheek rightCheek"></div>
+
+            </div>
+
+
+            <div class="hair"></div>
+
+
+            <div class="body"></div>
+
+
+            <div class="arm"></div>
+
+
+        </div>
+
+
+
+        <!-- BOY -->
+
+        <div class="person right">
+
+
+            <div class="head">
+
+                <div class="eye leftEye"></div>
+
+                <div class="eye rightEye"></div>
+
+                <div class="cheek leftCheek"></div>
+
+                <div class="cheek rightCheek"></div>
+
+            </div>
+
+
+            <div
+                class="hair"
+                style="background:#3e343b;">
+            </div>
+
+
+            <div class="body"></div>
+
+
+            <div class="arm"></div>
+
+
+        </div>
+
+
+
+        <!-- HEART -->
+
+        <div class="loveHeart">
+            💗
+        </div>
+
+
+    </div>
+
+
+
+    <h1 class="finalTitle">
+
+        I lovee youuu 💗
+
+    </h1>
+
+
+    <p class="finalText">
+
+        Dekha? Itna simple tha...<br>
+
+        aur tumhe itna time lag gaya. 😂💗
+
+    </p>
+
+
+    <div style="font-size:38px">
+
+        ✨ 💗 ✨ 💕 ✨ 💖 ✨ 💗 ✨
+
+    </div>
+
+
+    <p class="intro">
+
+        Ab smile karo. 😌🌷
+
+    </p>
+
+
+</section>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+/* =================================
+   PAGE SWITCHING
+================================= */
+
+function hideAll() {
+
+    document
+        .getElementById("startPage")
+        .classList.add("hidden");
+
+    document
+        .getElementById("questionA")
+        .classList.add("hidden");
+
+    document
+        .getElementById("questionB")
+        .classList.add("hidden");
+
+    document
+        .getElementById("questionC")
+        .classList.add("hidden");
+
+    document
+        .getElementById("finalPage")
+        .classList.add("hidden");
+
+}
+
+
+/* =================================
+   START
+================================= */
+
+function startPage() {
+
+    hideAll();
+
+    document
+        .getElementById("questionA")
+        .classList.remove("hidden");
+
+
+    /* Haan button runs for 15 seconds */
+
+    startRunning(
+        document.getElementById("yesA"),
+        15
+    );
+
+}
+
+
+/* =================================
+   MOVE BUTTON
+================================= */
+
+function moveButton(button, area) {
+
+    const maxX =
+        area.clientWidth -
+        button.offsetWidth;
+
+    const maxY =
+        area.clientHeight -
+        button.offsetHeight;
+
+
+    const x =
+        Math.random() * Math.max(0,maxX);
+
+    const y =
+        Math.random() * Math.max(0,maxY);
+
+
+    button.style.left = x + "px";
+
+    button.style.top = y + "px";
+
+    button.style.right = "auto";
+
+}
+
+
+/* =================================
+   BUTTON RUNNING TIMER
+================================= */
+
+function startRunning(button,seconds) {
+
+    const area =
+        button.parentElement;
+[9/25/2026 10:53 PM] Secret queen: const startTime =
+        Date.now();
+
+
+    /* Can't click while running */
+
+    button.style.pointerEvents =
+        "none";
+
+
+    const timer =
+        setInterval(function() {
+
+
+            const elapsed =
+                (Date.now() - startTime)
+                / 1000;
+
+
+            if(elapsed >= seconds) {
+
+                clearInterval(timer);
+
+                button.style.pointerEvents =
+                    "auto";
+
+                return;
+
+            }
+
+
+            moveButton(button,area);
+
+
+        },120);
+
+}
+
+
+/* =================================
+   QUESTION A
+================================= */
+
+const yesA =
+    document.getElementById("yesA");
+
+const noA =
+    document.getElementById("noA");
+
+
+/* Nahi button */
+
+noA.addEventListener(
+    "click",
+    function() {
+
+
+        document
+            .getElementById("warningA")
+            .textContent =
+            "JAAN SE MAARDALUNGI 😤🔪😂💗";
+
+
+        noA.textContent =
+            "Oops 😭";
+
+    }
+);
+
+
+/* Haan button */
+
+yesA.addEventListener(
+    "click",
+    function() {
+
+
+        hideAll();
+
+
+        document
+            .getElementById("questionB")
+            .classList.remove("hidden");
+
+
+        /* Both buttons run for 15 sec */
+
+        startRunning(
+            document.getElementById("yesB"),
+            15
+        );
+
+
+        startRunning(
+            document.getElementById("noB"),
+            15
+        );
+
+    }
+);
+
+
+/* =================================
+   QUESTION B
+================================= */
+
+document
+    .getElementById("yesB")
+    .addEventListener(
+        "click",
+        nextQuestionB
+    );
+
+
+document
+    .getElementById("noB")
+    .addEventListener(
+        "click",
+        nextQuestionB
+    );
+
+
+function nextQuestionB() {
+
+    hideAll();
+
+
+    document
+        .getElementById("questionC")
+        .classList.remove("hidden");
+
+
+    /* Both run for 20 seconds */
+
+    startRunning(
+        document.getElementById("love1"),
+        20
+    );
+
+
+    startRunning(
+        document.getElementById("love2"),
+        20
+    );
+
+}
+
+
+/* =================================
+   QUESTION C
+================================= */
+
+document
+    .getElementById("love1")
+    .addEventListener(
+        "click",
+        showFinal
+    );
+
+
+document
+    .getElementById("love2")
+    .addEventListener(
+        "click",
+        showFinal
+    );
+
+
+/*
+   After the buttons stop,
+   this message appears.
+*/
+
+setTimeout(
+    function() {
+
+        document
+            .getElementById("warningC")
+            .textContent =
+            "Option select karne mein itna time kyu lag raha? 👀 Tu pyaar nahi karta na mere se 😤💗";
+
+    },
+    20000
+);
+
+
+/* =================================
+   FINAL PAGE
+================================= */
+
+function showFinal() {
+
+    hideAll();
+
+
+    document
+        .getElementById("finalPage")
+        .classList.remove("hidden");
+
+
+    createHearts();
+
+    createSparkles();
+
+}
+
+
+/* =================================
+   FLOATING HEARTS
+================================= */
+
+function createHearts() {
+
+
+    const hearts = [
+        "💗",
+        "💕",
+        "💖",
+        "💞",
+        "💓",
+        "🌸"
+    ];
+
+
+    for(let i=0;i<45;i++) {
+
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className =
+            "floatingHeart";
+
+
+        heart.textContent =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random()*100 + "%";
+
+
+        heart.style.fontSize =
+            (15 +
+            Math.random()*28) + "px";
+
+
+        heart.style.animationDuration =
+            (4 +
+            Math.random()*6) + "s";
+
+
+        heart.style.animationDelay =
+            Math.random()*5 + "s";
+
+
+        document
+            .getElementById("screen")
+            .appendChild(heart);
+
+    }
+
+}
+
+
+/* =================================
+   SPARKLES
+================================= */
+
+function createSparkles() {
+
+
+    for(let i=0;i<35;i++) {
+[9/25/2026 10:53 PM] Secret queen: const sparkle =
+            document.createElement("div");
+
+
+        sparkle.className =
+            "sparkle";
+
+
+        sparkle.style.left =
+            Math.random()*100 + "%";
+
+
+        sparkle.style.top =
+            Math.random()*100 + "%";
+
+
+        sparkle.style.animationDelay =
+            Math.random()*1.5 + "s";
+
+
+        document
+            .getElementById("screen")
+            .appendChild(sparkle);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+[9/25/2026 11:38 PM] Secret queen: <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Hey You 👀💗</title> <style> * { box-sizing: border-box; } html, body { margin: 0; width: 100%; min-height: 100%; font-family: Arial, sans-serif; } body { background: radial-gradient( circle at top, #fff5fa, #ffe4f0, #ffd7e8 ); color: #704458; overflow: hidden; } .screen { width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; position: relative; overflow: hidden; } .card { width: min(92vw, 650px); min-height: 450px; padding: 35px 25px; text-align: center; background: rgba(255,255,255,0.84); border: 2px solid #f4bfd5; border-radius: 32px; box-shadow: 0 15px 50px rgba(180,80,120,0.20); backdrop-filter: blur(10px); position: relative; z-index: 10; } h1 { color: #d878a2; font-size: clamp(28px,7vw,42px); margin: 10px 0 15px; text-shadow: 0 0 10px #ffc3db; } h2 { color: #89536b; font-size: clamp(20px,5vw,29px); line-height: 1.45; } p { font-size: 18px; line-height: 1.6; } .intro { color: #efa5c5; font-weight: 600; } .emoji { font-size: 65px; margin-bottom: 8px; } .warning { color: #df648b; font-weight: bold; min-height: 30px; } button { border: none; border-radius: 50px; padding: 14px 24px; font-size: 16px; font-weight: bold; cursor: pointer; box-shadow: 0 7px 18px rgba(150,70,110,0.18); transition: transform 0.15s ease; } button:active { transform: scale(0.95); } .start, .yes { background: #ed9fc1; color: white; } .second { background: #f5b3d0; color: white; } .no { background: #eee1e8; color: #674655; } .buttons { width: 100%; height: 170px; margin-top: 20px; position: relative; } .choice { position: absolute; transition: left 0.12s linear, top 0.12s linear; } .hidden { display: none !important; } .final { animation: finalAppear 1.2s ease; } @keyframes finalAppear { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } } .finalTitle { color: #dc78a5; font-size: clamp(30px,8vw,46px); text-shadow: 0 0 10px #ffb9d5, 0 0 25px #ff9fc7; } .finalText { color: #9b5c77; font-weight: 600; } /* FLOATING HEARTS */ .floatingHeart { position: absolute; bottom: -60px; pointer-events: none; animation: floatHeart linear infinite; opacity: 0.8; z-index: 1; } @keyframes floatHeart { 0% { transform: translateY(0) rotate(0deg); opacity: 0; } 15% { opacity: 1; } 100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; } } /* SPARKLES */ .sparkle { position: absolute; width: 6px; height: 6px; background: white; border-radius: 50%; box-shadow: 0 0 10px #ff9fc6, 0 0 20px #ffb5d5; animation: sparkle 1s infinite alternate; pointer-events: none; } @keyframes sparkle { from { transform: scale(0.3); opacity: 0.2; } to { transform: scale(1.6); opacity: 1; } } /* CUTE COUPLE */ .couple { width: 320px; height: 210px; margin: auto; position: relative; } .person { position: absolute; bottom: 5px; width: 105px; height: 150px; } .person.left { left: 45px; } .person.right { right: 45px; } .head { position: absolute; width: 85px; height: 85px; left: 10px; top: 0; background: #ffd9bf; border: 3px solid #70484d; border-radius: 50%; z-index: 3; } .hair { position: absolute; width: 88px; height: 47px; left: 8px; top: -3px; background: #573942; border-radius: 50px 50px 25px 25px; z-index: 4; } .eye { position: absolute; width: 7px; height: 10px; background: #483039; border-radius: 50%; top: 43px; } .eye.leftEye { left: 25px; } .eye.rightEye { right: 25px; } .cheek { position: absolute; width: 13px; height: 7px; background: #ef91ad; border-radius: 50%; top: 56px; opacity: 0.7; } .cheek.leftCheek { left: 9px; } .cheek.rightCheek { right: 9px; } .body { position: absolute; width: 90px; height: 75px; left: 8px; bottom: 0; border-radius: 45px 45px 20px 20px; background: #efa4c4; border: 3px solid #70484d; } .person.right .body { background: #b9a4e5; } .arm { position: absolute; width: 65px; height: 16px; background: #ffd9bf; border-radius: 20px; top: 91px; z-index: 5; } .person.left .arm { right: -38px; transform: rotate(-25deg); }
+[9/25/2026 11:38 PM] Secret queen: .person.right .arm { left: -38px; transform: rotate(25deg); } .loveHeart { position: absolute; left: 50%; top: 48px; transform: translateX(-50%); font-size: 38px; z-index: 20; animation: heartBeat 0.8s infinite alternate; } @keyframes heartBeat { from { transform: translateX(-50%) scale(0.85); } to { transform: translateX(-50%) scale(1.2); } } @media(max-width:430px) { .card { padding: 28px 16px; } .couple { transform: scale(0.85); } .buttons { height: 180px; } } </style> </head> <body> <div class="screen" id="screen"> <div class="card"> <!-- START PAGE --> <section id="startPage"> <div class="emoji">🥺💗</div> <h1>Hey you... 👀💗</h1> <p class="intro"> “Tumhare liye kuch banaya hai.<br> Poora dekhna 😤” </p> <button class="start" onclick="startPage()"> Theek hai, dikhao 😌 </button> </section> <!-- QUESTION A --> <section id="questionA" class="hidden"> <div class="emoji">👀💗</div> <h2> Ek honest answer dena...<br> meri bakbak tumhe pasand hai? 👀 </h2> <div class="buttons" id="areaA"> <button class="choice yes" id="yesA"> Haan, pasand hai 💗 </button> <button class="choice no" id="noA"> Nahi 😏 </button> </div> <p class="warning" id="warningA"></p> </section> <!-- QUESTION B --> <section id="questionB" class="hidden"> <div class="emoji">🥺💗</div> <h2> Tu mere se pyaar karta hai ki nahi? 👀 </h2> <div class="buttons" id="areaB"> <button class="choice yes" id="yesB"> Haan, karta hu 💗 </button> <button class="choice second" id="noB"> Bohot saara karta hu 🥹💗 </button> </div> <p class="warning" id="warningB"></p> </section> <!-- QUESTION C --> <section id="questionC" class="hidden"> <div class="emoji">😤💗</div> <h2> I love youu bol. 😤 </h2> <div class="buttons" id="areaC"> <button class="choice yes" id="love1"> I lovee youuu 💗 </button> <button class="choice second" id="love2"> I lovee you bohot saara 🥹 </button> </div> <p class="warning" id="warningC"></p> </section> <!-- FINAL PAGE --> <section id="finalPage" class="hidden final"> <div class="couple"> <!-- GIRL --> <div class="person left"> <div class="head"> <div class="eye leftEye"></div> <div class="eye rightEye"></div> <div class="cheek leftCheek"></div> <div class="cheek rightCheek"></div> </div> <div class="hair"></div> <div class="body"></div> <div class="arm"></div> </div> <!-- BOY --> <div class="person right"> <div class="head"> <div class="eye leftEye"></div> <div class="eye rightEye"></div> <div class="cheek leftCheek"></div> <div class="cheek rightCheek"></div> </div> <div class="hair" style="background:#3e343b;"></div> <div class="body"></div> <div class="arm"></div> </div> <div class="loveHeart">💗</div> </div> <h1 class="finalTitle"> I lovee youuu 💗 </h1> <p class="finalText"> Dekha? Itna simple tha...<br> aur tumhe itna time lag gaya. 😂💗 </p> <div style="font-size:38px"> ✨ 💗 ✨ 💕 ✨ 💖 ✨ 💗 ✨ </div> <p class="intro"> Ab smile karo. 😌🌷 </p> </section> </div> </div> <script> /* PAGE SWITCHING */ function hideAll() { document.getElementById("startPage").classList.add("hidden"); document.getElementById("questionA").classList.add("hidden"); document.getElementById("questionB").classList.add("hidden"); document.getElementById("questionC").classList.add("hidden"); document.getElementById("finalPage").classList.add("hidden"); } /* MOVE BUTTON */ function moveButton(button, area) { const maxX = area.clientWidth - button.offsetWidth; const maxY = area.clientHeight - button.offsetHeight; const x = Math.random() * Math.max(0, maxX); const y = Math.random() * Math.max(0, maxY); button.style.left = x + "px"; button.style.top = y + "px"; } /* RUNNING BUTTON */ function startRunning(button, seconds) { const area = button.parentElement; const startTime = Date.now(); button.style.pointerEvents = "none"; moveButton(button, area); const timer = setInterval(function() { const elapsed = (Date.now() - startTime) / 1000; if (elapsed >= seconds) { clearInterval(timer); button.style.pointerEvents = "auto"; return; } moveButton(button, area); }, 120); } /* START */ function startPage() { hideAll(); document.getElementById("questionA").classList.remove("hidden");
+[9/25/2026 11:38 PM] Secret queen: startRunning( document.getElementById("yesA"), 15 ); } /* QUESTION A */ const yesA = document.getElementById("yesA"); const noA = document.getElementById("noA"); noA.addEventListener("click", function() { document.getElementById("warningA").textContent = "Areee 😭 ye option allowed hi nahi tha 😂💗"; noA.textContent = "Oops 😭"; }); yesA.addEventListener("click", function() { hideAll(); document.getElementById("questionB").classList.remove("hidden"); startRunning( document.getElementById("yesB"), 15 ); startRunning( document.getElementById("noB"), 15 ); }); /* QUESTION B */ document.getElementById("yesB").addEventListener( "click", nextQuestionB ); document.getElementById("noB").addEventListener( "click", nextQuestionB ); function nextQuestionB() { hideAll(); document.getElementById("questionC").classList.remove("hidden"); startRunning( document.getElementById("love1"), 20 ); startRunning( document.getElementById("love2"), 20 ); /* Timer starts HERE, not when the page first loads */ setTimeout(function() { const warning = document.getElementById("warningC"); if (!document .getElementById("questionC") .classList.contains("hidden")) { warning.textContent = "Option select karne mein itna time kyu lag raha? 👀 Tu pyaar nahi karta na mere se 😤💗"; } }, 20000); } /* QUESTION C */ document.getElementById("love1").addEventListener( "click", showFinal ); document.getElementById("love2").addEventListener( "click", showFinal ); /* FINAL PAGE */ function showFinal() { hideAll(); document.getElementById("finalPage").classList.remove("hidden"); createHearts(); createSparkles(); } /* FLOATING HEARTS */ function createHearts() { const hearts = [ "💗", "💕", "💖", "💞", "💓", "🌸" ]; for (let i = 0; i < 45; i++) { const heart = document.createElement("div"); heart.className = "floatingHeart"; heart.textContent = hearts[Math.floor(Math.random() * hearts.length)]; heart.style.left = Math.random() * 100 + "%"; heart.style.fontSize = (15 + Math.random() * 28) + "px"; heart.style.animationDuration = (4 + Math.random() * 6) + "s"; heart.style.animationDelay = Math.random() * 5 + "s"; document .getElementById("screen") .appendChild(heart); } } /* SPARKLES */ function createSparkles() { for (let i = 0; i < 35; i++) { const sparkle = document.createElement("div"); sparkle.className = "sparkle"; sparkle.style.left = Math.random() * 100 + "%"; sparkle.style.top = Math.random() * 100 + "%"; sparkle.style.animationDelay = Math.random() * 1.5 + "s"; document .getElementById("screen") .appendChild(sparkle); } } </script> </body> </html>
